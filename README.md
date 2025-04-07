@@ -1,37 +1,88 @@
 # Estudio de Costo de Vivienda
 
-Este repositorio contiene un análisis exploratorio de datos (EDA) sobre los factores que influyen en el costo de las viviendas, utilizando Python y técnicas de modelado de datos.
+## Objetivo
+Analizar los factores que influyen en el precio de venta de las viviendas a través de técnicas de análisis exploratorio de datos (EDA) y modelos de regresión, con el fin de identificar las variables más relevantes para la valoración inmobiliaria.
 
-## Descripción del Proyecto
-El objetivo de este estudio es identificar las variables más relevantes que afectan el precio de venta de las viviendas. Se utilizan diversas técnicas de análisis estadístico y modelos de regresión para comprender la relación entre las características de las propiedades y su valor en el mercado.
+---
 
-## Contenido
-- **Notebook:** `Estudio de Costo de vivienda.ipynb` contiene el análisis detallado con visualizaciones y modelado.
-- **Datos:** Se espera que los datos utilizados en el análisis sean provistos o descargados según se indique en el notebook.
+## Tabla de Contenidos
+- [Introducción](#introducción)  
+- [Fuente de Datos](#fuente-de-datos)  
+- [Análisis Exploratorio (EDA)](#análisis-exploratorio-eda)  
+- [Modelado Predictivo](#modelado-predictivo)  
+- [Conclusiones](#conclusiones)  
+- [Requisitos](#requisitos)  
+- [Uso](#uso)  
+- [Contribuciones](#contribuciones)  
+- [Autor](#autor)
+
+---
+
+## Introducción
+El análisis de precios de vivienda permite entender cómo distintas características estructurales y del entorno afectan el valor de mercado de las propiedades. Este proyecto incluye:
+- Limpieza y transformación de datos.
+- Visualizaciones interactivas.
+- Modelos de regresión lineal para estimación de precios.
+
+---
+
+## Fuente de Datos
+- **Archivo esperado:** `housing_data.csv` (u otro formato descrito en el notebook).
+- Atributos comunes analizados: superficie habitable, número de habitaciones, antigüedad, ubicación, calidad de construcción, etc.
+
+---
+
+## Análisis Exploratorio (EDA)
+Se realiza un análisis exhaustivo para detectar:
+- Distribuciones de variables numéricas y categóricas.
+- Correlaciones entre variables.
+- Valores atípicos (outliers).
+- Impacto de variables clave en el precio de venta.
+
+---
+
+## Modelado Predictivo
+Se implementan modelos de regresión para predecir el precio de la vivienda:
+- Regresión Lineal Simple y Múltiple.
+- Métricas de evaluación como RMSE y R².
+- Evaluación de normalidad y multicolinealidad.
+
+---
+
+## Conclusiones
+- **Factores Relevantes:** El área habitable, el número de baños y la calidad de construcción son algunas de las variables más influyentes.
+- **Outliers:** Se identificaron valores atípicos que pueden distorsionar el modelo.
+- **Mejoras Futuras:** Se recomienda incorporar variables categóricas codificadas y aplicar transformaciones para mejorar la precisión.
+
+---
 
 ## Requisitos
-Para ejecutar el análisis, se requiere tener instalados los siguientes paquetes de Python:
+Asegúrate de tener instalados los siguientes paquetes:
 
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn
 ```
 
-## Uso
-Para ejecutar el análisis, simplemente abre el notebook en Jupyter Notebook o en Google Colab y sigue las instrucciones dentro del documento.
+---
 
+## Uso
+1. Clona el repositorio:
+```bash
+git clone https://github.com/tu_usuario/estudio-costo-vivienda.git
+```
+2. Abre el notebook:
 ```bash
 jupyter notebook "Estudio de Costo de vivienda.ipynb"
 ```
+3. Ejecuta las celdas en orden para realizar el análisis completo.
 
-## Conclusiones
-- El análisis permitió identificar los factores más relevantes que influyen en el precio de venta de las propiedades.
-- Se evidenció que el área habitable es una de las variables más influyentes en la determinación del precio.
-- Se identificó la presencia de outliers en las variables clave.
-- Se sugiere un modelo más completo que incorpore variables categóricas y ajuste sesgos para mejorar la precisión.
+---
 
 ## Contribuciones
-Las contribuciones son bienvenidas. Si deseas mejorar el análisis o agregar nuevas funcionalidades, puedes hacer un fork del repositorio y enviar un pull request.
+¿Tienes ideas para extender el modelo o usar otras técnicas como árboles o redes neuronales?  
+¡Siéntete libre de abrir un issue o enviar un pull request!
 
-**Autor:** Jose Eduardo Saucedo Martinez
+---
 
-
+## Autor
+**José Eduardo Saucedo Martínez**  
